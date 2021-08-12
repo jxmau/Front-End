@@ -1,0 +1,164 @@
+@import url(/static/css/_variables.css);
+
+.mobile {
+    display: none;
+}
+
+body {
+    background-color: var(--pale-blue);
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+p, a {
+    font-size: 16px;
+    font-family: var(--text-font);
+}
+
+#background {
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin: 0em;
+    top: 0;
+}
+
+#background img {
+    height: auto;
+    width: 100%;
+    position: absolute;
+}
+
+#summary-box {
+    background-color: white;
+    width: 30%;
+    min-width: 350px;
+    height: auto;
+    margin-top: 3em;
+    border-radius: 2em;
+    text-align: center;
+}
+
+#summary-box #header {
+    overflow: hidden;
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+#summary-box #header img {
+    width: 100%;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2em;
+}
+
+#text-container #title {
+    color: var(--dark-blue);
+    font-family: var(--text-font);
+}
+
+#text-container #information {
+    font-family: var(--text-font);
+    font-weight: 600;
+    margin: 1em 0;
+    color: var(--desaturated-blue);
+}
+
+#plan-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5em 0;
+    background-color: var(--very-pale-blue);
+    border-radius: 5%;
+}
+
+#plan-container #plan-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: -1.5em;    
+}
+
+#plan-container #plan-details #name {
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin-bottom: -1em;
+}
+
+#plan-container #plan-details #price {
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#plan-container a {
+    font-size: 12px;
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+#plan-container a:hover {
+    text-decoration: none;
+}
+
+.button {
+    text-align: center;
+    margin: 0.5em 0;
+    height: 3em;
+    line-height: 3;
+    border-radius: 10px;
+
+}
+
+.button a {
+    text-decoration: none;
+}
+
+#payment-button-container {
+    background-color: var(--bright-blue);
+}
+
+#payment-button-container:hover {
+    background-color: var(--purple);
+}
+
+#payment-button-container a {
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#cancel-button a {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 1em;
+}
+
+#cancel-button a:hover {
+    color: var(--dark-blue);
+}
+
+
+@media screen and (max-width: 375px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+}
